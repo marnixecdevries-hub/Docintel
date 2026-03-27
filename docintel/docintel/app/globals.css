@@ -1,0 +1,31 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f0e8;
+  --cream: #ede8dc;
+  --accent: #c8500a;
+  --accent-light: #f0d4c4;
+  --accent-pale: #faf3ee;
+  --muted: #7a7165;
+  --border: #d6d0c4;
+  --white: #ffffff;
+  --success: #2d6a4f;
+  --success-bg: #d8f3dc;
+  --card-shadow: 0 2px 12px rgba(13,13,13,0.07), 0 1px 3px rgba(13,13,13,0.04);
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
